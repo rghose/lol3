@@ -9,6 +9,58 @@
 <!-- the terms of the GNU General Public License -->
 <!-- as published by the Free Software Foundation. -->
 
+
+<category>
+<pattern>LIST ALL * WEBSERVERS</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+<category>
+<pattern>LIST ALL * WEB-SERVERS</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+<category>
+<pattern>LIST ALL * WEB SERVERS</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+<category>
+<pattern>SHOW ME ALL * WEBSERVERS</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+<category>
+<pattern>SHOW ME ALL * WEB-SERVERS</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+<category>
+<pattern>SHOW ME ALL * WEB SERVERS</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+<category>
+<pattern>LIST ALL WEBSERVERS OF *</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+<category>
+<pattern>LIST ALL WEB SERVERS OF *</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+<category>
+<pattern>LIST ALL WEB-SERVERS OF *</pattern>
+<template>The list of all <star/> webservers</template>
+</category>
+
+
+<category>
+<pattern>HOW ARE YOU</pattern>
+<template>I'm fine <star/></template>
+</category>
+
 <category>
 <pattern>SHOW ALL SERVERS OF *</pattern>
 <template><srai>ALL SERVERS OF <star/></srai></template>
