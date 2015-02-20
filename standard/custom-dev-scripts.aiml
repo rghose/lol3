@@ -10,6 +10,27 @@
 <!-- as published by the Free Software Foundation. -->
 
 <category>
+<pattern>SHOW ALL SERVERS OF *</pattern>
+<template><srai>ALL SERVERS OF <star/></srai></template>
+</category>
+
+<category>
+<pattern>ALL SERVERS OF *</pattern>
+<template>
+<system>
+`pwd`/scripts/list_server <star/>
+</system>
+</template>
+</category>
+
+<category>
+<pattern>SERVER STATUS OF *</pattern>
+<template>
+<system>echo <star/> is dead</system>
+</template>
+</category>
+
+<category>
 <pattern>TELL BOT AGE</pattern>
 <template>I am 
 <javascript>
@@ -24,8 +45,7 @@ difference -= hoursDifference*1000*60*60;
 var minutesDifference = Math.floor(difference/1000/60);
 difference -= minhutesDifference*1000*60;
 var secondsDifference = Math.floor(difference/1000);
-daysDifference + " days, " + hoursDifference + " hours, " +
-minutesDifference + " minutes and " + secondsDifference + " seconds old.");
+console.log(daysDifference + " days, " + hoursDifference + " hours, " + minutesDifference + " minutes and " + secondsDifference + " seconds old.");
 ]]>
 </javascript>
 </template>
