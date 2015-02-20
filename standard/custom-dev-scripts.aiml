@@ -70,7 +70,7 @@
 <pattern>ALL SERVERS OF *</pattern>
 <template>
 <system>
-`pwd`/scripts/list_server <star/>
+`pwd`/scripts/list_servers.py <star/>
 </system>
 </template>
 </category>
