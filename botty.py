@@ -1,4 +1,4 @@
-mport aiml
+import aiml
 
 k = aiml.Kernel()
 k.verbose(True)
