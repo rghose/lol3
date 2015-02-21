@@ -7,33 +7,15 @@
          <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
         <title>Sanskari Bot</title>
     </head>
-    <script>
-    	function ajaxCall(url, div, text) {
-		var xmlhttp;
-		if (window.XMLHttpRequest) xmlhttp=new XMLHttpRequest();
-		else xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		xmlhttp.onreadystatechange=function() {
-			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-				document.getElementById(div).innerHTML+=("lol3:<br/>"+xmlhttp.responseText+"</br>");
-			}
-		}
-		xmlhttp.open("POST",url,true);
-		xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-		xmlhttp.send("data="+text);
-	}
-    	function botme() {
-		var text=document.getElementById('divData').value;
-		document.getElementById('divData').value="";
-		document.getElementById('divChat').innerHTML+=("You:<br/>"+text+"<br/>");
-		ajaxCall("request","divChat",text);
-	}
-    </script>
+    <script type='text/javascript' src='/static/js/custom.js'></script>
     <body>
-	<div class='container'>
-		<div id='divChat' style='overflow-y:auto'>
+	<div class='container' style="width:80%;text-align:center;">
+		<div style="position:fixed;width:80%;height:80%;overflow-y:auto;" id='divChat'>
 		</div>
-		<input id='divData' type='text' placeholder='Enter your worries'/>
-		<input value='go' class='button' type='button' onclick='botme();'/>
+		<div style="position: fixed;padding:10;bottom: 0;left: 0;height: auto;line-height: auto;	width: 100%;">
+			<input id='divData' type='text' placeholder='Enter your worries' onKeyPress="if(checkSubmit(event)) botme();"/>
+			<input value='go' class='button' type='button' onclick='botme();'/>
+		</div>
 	</div>
     </body>
 </html>
